@@ -18,11 +18,11 @@ const planetEl = document.getElementById("planets")
 
 
 //another way
-const planetEl = document.getElementById("planets")
+const planetE2 = document.getElementById("planets")
 planets.forEach(planet => {
   let planetWriter = document.createElement("p")
   planetWriter.innerHTML = `${planet}`
-  planetEl.appendChild(planetWriter)
+  planetE2.appendChild(planetWriter)
   });
 
 
@@ -38,8 +38,8 @@ planets.forEach(function(string){
      
       console.log(newArray);
 
-    //   planetEl.innerHTML +=
-    //   `<h2>${newArray}</h2>`;
+      planetEl.innerHTML +=
+      `<h2>${newArray}</h2>`;
 
       const filtered = newArray.filter(function(arguement){
         return arguement.includes("e")
